@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2.CrossCutting", "4.2.Cro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ironbody.academias.Infra.Data", "ironbody.academias.Infra.Data\ironbody.academias.Infra.Data.csproj", "{FF2E2BDC-C882-4253-9D27-F14DCED78DF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ironbody.academias.Domain", "ironbody.academias.Domain\ironbody.academias.Domain.csproj", "{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ironbody.academias.Application", "ironbody.academias.Application\ironbody.academias.Application.csproj", "{742F5169-CFA1-4356-8B84-53186FE53302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{FF2E2BDC-C882-4253-9D27-F14DCED78DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2E2BDC-C882-4253-9D27-F14DCED78DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2E2BDC-C882-4253-9D27-F14DCED78DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742F5169-CFA1-4356-8B84-53186FE53302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742F5169-CFA1-4356-8B84-53186FE53302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742F5169-CFA1-4356-8B84-53186FE53302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742F5169-CFA1-4356-8B84-53186FE53302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +47,8 @@ Global
 		{FD955744-1E69-4107-8849-4D08309E7AAB} = {F281C06E-B90C-499D-95EA-04ADD720471B}
 		{001C5CC5-4914-4835-9B76-22420322B59C} = {F281C06E-B90C-499D-95EA-04ADD720471B}
 		{FF2E2BDC-C882-4253-9D27-F14DCED78DF6} = {FD955744-1E69-4107-8849-4D08309E7AAB}
+		{D983ED21-DC82-4F24-A1E4-CDF9ED5FDF19} = {D988A2B4-8D61-4CD7-8FE9-2FF77A0A4311}
+		{742F5169-CFA1-4356-8B84-53186FE53302} = {0EB151C5-2807-4BE6-9508-5E12AF68BEFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F5123AF-067B-4859-AB3F-871FE66BFA02}

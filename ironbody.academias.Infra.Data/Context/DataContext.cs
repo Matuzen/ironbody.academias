@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ironbody.academias.Domain.Entities.Account;
+using ironbody.academias.Infra.Data.DataConfig;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace ironbody.academias.Infra.Data.Context;
-public class DataContext : DbContext
+public class DataContext : IdentityDbContext<Users>
 {
     public DataContext(DbContextOptions<DataContext> options) : base(options)
     {
@@ -10,6 +13,7 @@ public class DataContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-       base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<Users>(new UsersConfiguration().Configure);
+        base.OnModelCreating(modelBuilder);
     }
 }
