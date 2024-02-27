@@ -11,9 +11,11 @@ public class DataContext : IdentityDbContext<Users>
         
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        modelBuilder.Entity<Users>(new UsersConfiguration().Configure);
-        base.OnModelCreating(modelBuilder);
+        builder.Entity<Users>(new UsersConfiguration().Configure);
+        // Esta linha está configurando o modelo para a entidade Users usando a classe UsersConfiguration.
+        // A classe UsersConfiguration deve ter um método Configure que define as configurações para a entidade Users, como as propriedades da entidade e suas restrições.
+        base.OnModelCreating(builder);
     }
 }
