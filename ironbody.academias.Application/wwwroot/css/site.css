@@ -16,3 +16,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+footer p{
+    color: #FFF;
+}
+
+.nav-item{
+    margin:2px 5px;
+}
+
+.navbar-nav > li > a{
+    color: #FFF;
+}
