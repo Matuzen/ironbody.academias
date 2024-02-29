@@ -29,7 +29,10 @@ footer p{
     color: #FFF;
 }
 
-.container-home-title h1{
+.container-home-title h1 {
     color: #FFF;
-    text-align:center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
