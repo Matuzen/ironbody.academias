@@ -33,6 +33,8 @@ footer p{
     color: #FFF;
     text-align: center;
     font-family: "Roboto", sans-serif;
+    font-size: 5em;
     font-weight: 100;
     font-style: normal;
+    text-shadow: 5px 5px 5px #ff0000;
 }

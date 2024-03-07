@@ -1,0 +1,46 @@
+﻿@model ironbody.academias.Application.Models.Account.UserViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutGeneral.cshtml";
+}
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Bem vindo e crie uma conta</h1>
+        </div>
+        <div class="col-sm-6">
+            <form class="row g-3" asp-controller="Account" asp-action="Register" method="post">
+                <div class="col-md-6">
+                    <label for="primeiroNome" class="form-label">Primeiro Nome</label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="ultimoNome" class="form-label">Último Nome</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="inputAddress" placeholder="Digite seu e-mail">
+                </div>
+                <div class="col-12">
+                    <label for="user" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Digite um usuário">
+                </div>
+                <div class="col-md-6">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                    <label for="confirmaSenha" class="form-label">Confirme a senha</label>
+                    <input type="password" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
