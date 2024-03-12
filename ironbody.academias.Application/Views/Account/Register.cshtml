@@ -8,36 +8,42 @@
     <br />
     <div class="row">
         <div class="col-sm-6">
-            <h1>Bem vindo e crie uma conta</h1>
+            <img src="~/img/NovoUsuarioFoto.jpg" style="width: 100%"/>
+
         </div>
         <div class="col-sm-6">
             <form class="row g-3" asp-controller="Account" asp-action="Register" method="post">
                 <div class="col-md-6">
                     <label for="primeiroNome" class="form-label">Primeiro Nome</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <input type="text" class="form-control" asp-for="FirstName">
                 </div>
                 <div class="col-md-6">
                     <label for="ultimoNome" class="form-label">Último Nome</label>
-                    <input type="text" class="form-control" id="inputPassword4">
+                    <input type="text" class="form-control" asp-for="LastName">
                 </div>
                 <div class="col-12">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="inputAddress" placeholder="Digite seu e-mail">
+                    <input type="email" class="form-control" asp-for="Email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="col-12">
-                    <label for="user" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Digite um usuário">
+                    <label for="Usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" asp-for="UserName" placeholder="Digite um usuário">
                 </div>
                 <div class="col-md-6">
                     <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="inputCity">
+                    <input type="password" class="form-control" asp-for="Password">
                 </div>
                 <div class="col-md-6">
                     <label for="confirmaSenha" class="form-label">Confirme a senha</label>
-                    <input type="password" class="form-control" id="inputZip">
+                    <input type="password" class="form-control" asp-for="ConfirmPassword">
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Registrar</button>
+                    </div>
+                </div>
+                <div asp-validation-summary="All" class="text-danger">
+
                 </div>
             </form>
         </div>
